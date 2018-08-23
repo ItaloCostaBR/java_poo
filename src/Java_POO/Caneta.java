@@ -1,35 +1,84 @@
 package Java_POO;
 
 public class Caneta {
-    String modelo;
-    String cor;
-    float ponta;
-    boolean tampada;
+//    String modelo;
+//    String cor;
+//    float ponta;
+//    boolean tampada;
+//
+//    void rabiscar()
+//    {
+//        if (this.tampada == false){
+//            System.out.println("Rabiscando");
+//        }else{
+//            System.out.println("Destampe a caneta");
+//        }
+//    }
+//
+//    void tampar()
+//    {
+//        this.tampada = true;
+//    }
+//
+//    void destampar()
+//    {
+//        this.tampada = false;
+//    }
+//
+//    void status()
+//    {
+//        System.out.println("Modelo: " + this.modelo);
+//        System.out.println("Caneta: " + this.cor);
+//        System.out.println("Ponta: " + this.ponta);
+//        System.out.println("Tampada? " + this.tampada);
+//    }
 
-    void rabiscar()
+    private String modelo;
+    private String cor;
+    private float ponta;
+
+    public Caneta(String model, String color, float penTip)
     {
-        if (this.tampada == false){
-            System.out.println("Rabiscando");
-        }else{
-            System.out.println("Destampe a caneta");
-        }
+        this.setModelo(model);
+        this.setCor(color);
+        this.setPonta(penTip);
     }
 
-    void tampar()
+    public String getModelo()
     {
-        this.tampada = true;
+        return this.modelo;
     }
 
-    void destampar()
+    public void setModelo(String m)
     {
-        this.tampada = false;
+        this.modelo = m;
     }
 
-    void status()
+    public String getCor()
     {
-        System.out.println("Modelo: " + this.modelo);
-        System.out.println("Caneta: " + this.cor);
-        System.out.println("Ponta: " + this.ponta);
-        System.out.println("Tampada? " + this.tampada);
+        return this.cor;
+    }
+
+    public void setCor(String c)
+    {
+        this.cor = c;
+    }
+
+    public float getPonta()
+    {
+        return this.ponta;
+    }
+
+    public void setPonta(float p)
+    {
+        this.ponta = p;
+    }
+
+    public void status()
+    {
+        System.out.println("Sobre a Caneta:");
+        System.out.println("Modelo: " + this.getModelo());
+        System.out.println("Cor: " + this.getCor());
+        System.out.println("Ponta: " + this.getPonta());
     }
 }
