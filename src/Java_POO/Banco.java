@@ -4,13 +4,16 @@ public class Banco {
 
     int numConta;
     protected String tipoConta;
+    private String contaCorrente = "CC";
+    private String contaPoupanca = "CP";
+
     private String titularConta;
-    private double saldoConta;
+    private float saldoConta;
     private boolean status;
 
     public Banco() {
         this.setStatus(false);
-        this.setSaldoConta(0.0);
+        this.setSaldoConta(0);
     }
 
     public void status()
@@ -19,7 +22,7 @@ public class Banco {
         System.out.println("Titular da Conta: " + this.getTitularConta());
         System.out.println("Tipo de conta: " + this.getTipoConta());
         System.out.println("Saldo: R$ " + this.getSaldoConta());
-        System.out.println("Status da conta: " + this.isStatus());
+        System.out.println("Status da conta: " + this.getStatus());
     }
 
     public int getNumConta() {
@@ -35,9 +38,9 @@ public class Banco {
     }
 
     public void setTipoConta(String tipoConta) {
-        if(tipoConta.equals("cc")){
+        if(tipoConta.equals(this.contaCorrente)){
             this.tipoConta = "Conta corrente";
-        } else if(tipoConta.equals("cp")){
+        } else if(tipoConta.equals(this.contaPoupanca)){
             this.tipoConta = "Conta poupança";
         } else {
             this.tipoConta = "Tipo de conta inexistente";
@@ -52,15 +55,15 @@ public class Banco {
         this.titularConta = titularConta;
     }
 
-    public double getSaldoConta() {
+    public float getSaldoConta() {
         return saldoConta;
     }
 
-    public void setSaldoConta(double saldoConta) {
+    public void setSaldoConta(float saldoConta) {
         this.saldoConta = saldoConta;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
@@ -72,33 +75,66 @@ public class Banco {
     {
         this.setTipoConta(tipoConta);
         this.setStatus(true);
-        if(tipoConta.equals("CC")){
-            this.setSaldoConta(50.0);
-        }else if(tipoConta.equals("CP")){
-            this.setSaldoConta(150.0);
+
+        if(tipoConta.equals(this.contaCorrente)){
+            this.setSaldoConta(50);
+        }else if(tipoConta.equals(this.contaPoupanca)){
+            this.setSaldoConta(150);
         }
 
     }
 
     public void fecharConta()
     {
-        if(this.getSaldoConta() > 0){
+        if(this.getSaldoConta() < 0){
+            System.out.println("Você está em débito!");
+        } else if (this.getSaldoConta() > 0) {
             System.out.println("Saque o dinheiro para poder fechar a conta");
+        } else {
+            System.out.println("Fechando conta...");
+            this.setStatus(false);
         }
     }
 
-    public void depositar()
+    public void depositar(float valor)
     {
-
+        if (this.getStatus()) {
+            this.setSaldoConta(this.getSaldoConta() + valor);
+            System.out.println("Depósito realizado na conta de: " + this.getTitularConta());
+        } else {
+            System.out.println("Não foi possível realizar depósito!");
+        }
     }
 
-    public void sacar()
+    public void sacar(float valor)
     {
-
+        if(this.getStatus()){
+            if(this.getSaldoConta() >= valor){
+                this.setSaldoConta(getSaldoConta() - valor);
+                System.out.println("Saque no valor de: R$ " + valor + " na conta de: " + this.getTitularConta());
+            } else {
+                System.out.println("Saldo insuficiente para saque!");
+            }
+        } else {
+            System.out.println("Impossível realizar saque. Conta fechada!");
+        }
     }
 
     public void pagarMensalidade()
     {
+        float value = 0;
 
+        if(getTipoConta().equals(this.contaCorrente)){
+            value = 12;
+        } else if (getTipoConta().equals(this.contaPoupanca)){
+            value = 20;
+        }
+
+        if(this.getStatus()){
+            this.setSaldoConta(this.getSaldoConta() - value);
+            System.out.println("Anuidade paga com sucesso!");
+        } else {
+            System.out.println("Sua conta está fechada!");
+        }
     }
 }

@@ -27,7 +27,25 @@ public class Main {
 
 
         Banco processo1 = new Banco();
-        processo1.setTipoConta("cp");
+        processo1.abrirConta("CC");
+        processo1.setNumConta(11111);
+        processo1.setTitularConta("Titular 1");
+        processo1.depositar(100);
+        processo1.sacar(150);
+        processo1.fecharConta();
+
+        Banco processo2 = new Banco();
+        processo2.abrirConta("CP");
+        processo2.setNumConta(22222);
+        processo2.setTitularConta("Titular 2");
+        processo2.depositar(500);
+        processo2.sacar(550);
+
+
+        System.out.println("-------------------");
         processo1.status();
+        System.out.println("-------------------");
+        processo2.status();
+
     }
 }

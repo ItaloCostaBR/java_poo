@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71c5a996-f018-45cf-b642-899f8ea722e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java_POO/Banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVA/Java_POO/Caneta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA/Java_POO/Caneta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA/Java_POO/Banco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA/Java_POO/Banco.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVA/Java_POO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA/Java_POO/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java_POO/Caneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java_POO/Caneta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java_POO/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java_POO/Banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java_POO/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java_POO/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,22 +19,23 @@
     <session id="-248278011">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2190" />
+          <entry key="java" value="3928" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2190" />
+          <entry key="JAVA" value="3928" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,20 +60,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Java_POO/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="394">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Java_POO/Banco.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
-              <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+              <folding>
+                <element signature="method#setTipoConta#0;class#Banco#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,8 +97,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Java_POO/Caneta.java" />
-        <option value="$PROJECT_DIR$/src/Java_POO/Main.java" />
         <option value="$PROJECT_DIR$/src/Java_POO/Banco.java" />
+        <option value="$PROJECT_DIR$/src/Java_POO/Main.java" />
       </list>
     </option>
   </component>
@@ -119,7 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,6 +145,7 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,11 +199,14 @@
       <workItem from="1534955898360" duration="790000" />
       <workItem from="1535031532044" duration="1087000" />
       <workItem from="1535035672765" duration="510000" />
+      <workItem from="1535053431324" duration="2731000" />
+      <workItem from="1535056692935" duration="1312000" />
+      <workItem from="1535112994980" duration="6541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11833000" />
+    <option name="totallyTimeSpent" value="22417000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -216,7 +221,7 @@
     <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17838125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18157615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -225,7 +230,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20518135" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32642487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -274,17 +279,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Java_POO/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Java_POO/Banco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="378">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+          <folding>
+            <element signature="method#setTipoConta#0;class#Banco#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Java_POO/Banco.java">
+    <entry file="file://$PROJECT_DIR$/src/Java_POO/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        <state relative-caret-position="394">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
         </state>
       </provider>
     </entry>
